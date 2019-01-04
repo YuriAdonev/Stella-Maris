@@ -1,0 +1,79 @@
+mixin icon(name,mod)
+	if(mod)
+		svg(class="svg-sprite-icon icon-" + name + ' ' + mod)
+			use(xlink:href="static/images/svg/symbol/sprite.svg#" + name)
+	else
+		svg(class="svg-sprite-icon icon-" + name)
+			use(xlink:href="static/images/svg/symbol/sprite.svg#" + name)
+			
+mixin sectionTitle(titleBg,titleText,subtitleText)
+	.section__bg-title= titleBg
+		span(data-letters=titleBg)
+		span(data-letters=titleBg)
+	p.section__title.anim-title= titleText
+	p.section__subtitle= subtitleText
+	
+mixin servicesItemHome(servicesItemLink, servicesItemImage, servicesItemTitle, servicesItemText, ...items)
+	a.services__item(href=servicesItemLink)
+		.item__image
+			img(src=servicesItemImage)
+			p.item__title= servicesItemTitle
+			ul.item__desc
+				each item in items
+					li= item
+		.item__footer
+			.item__text= servicesItemText
+			.item__link Узнать больше<span>+</span>
+		.deco-box
+
+
+mixin servicesItemInner(servicesItemLink, servicesItemImage, servicesItemTitle, servicesItemDesc)
+	a.services__item(href=servicesItemLink)
+		.item__image
+			img(src=servicesItemImage)
+			p.item__title= servicesItemTitle
+			.item__desc= servicesItemDesc	
+		.deco-box
+		
+mixin specialistsSlide(specialistsSlideImg, specialistsSlideName, ...specialistsSlideText)
+	.specialists__slide
+		.specialists__item
+			.specialists-item__img
+				img(src=specialistsSlideImg)
+			p.specialists-item__name= specialistsSlideName
+			each item in specialistsSlideText
+				p.specialists-item__text= item
+				
+mixin priceItem(priceItemTitle, priceItemCost, priceItemLink, priceItemBtn)
+	.price__item.js-accordion
+		.price-item__wrapper.js-accordion-item
+			.price-item__content
+				.price-item__title= priceItemTitle
+				.price-item__cost= priceItemCost
+				a.price-item__btn.product__btn(href=priceItemBtn)
+					span Запись на прием
+				.price-item__arrow.js-accordion-item-link
+					span
+						+icon('arrow-down','')
+			.price-item__add.js-accordion-item-content
+				a.price-item__link(href=priceItemLink) Подробнее об услуге
+				
+mixin productItemHome(productItemImg, productItemName, productItemText, productItemBtn)
+	.item
+		a.bottle(style=productItemImg)
+		.bg
+		.text
+			.name
+				span= productItemName
+			.discr
+				span= productItemText
+		a.product__btn(htef=productItemBtn)
+			span Купить
+			
+mixin atmosphereItemHome(atmosphereItemLink, atmosphereItemNumber, atmosphereItemImg)
+	a(href=atmosphereItemLink class="atmosphere__item item__"+atmosphereItemNumber)
+		.bg
+			.img-d
+				span.atmosphere__image(style=atmosphereItemImg)
+			.ov.animated
+			

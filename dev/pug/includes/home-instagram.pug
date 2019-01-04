@@ -1,0 +1,17 @@
+mixin intagramItems(intagramItemsLink, intagramItemsImg, intagramItemsText, intagramItemsAuthor)
+	.instagram__item
+		.instagram__image
+			a.instagram__img(href=intagramItemsLink style=intagramItemsImg)
+			.instagram__decor
+		.instagram__text= intagramItemsText
+	
+
+section.instagram
+	.container
+		.section__wrapper.anim-title-bg
+			+sectionTitle('Instagram', 'Мы в instagram', 'Далеко-далеко за словесными горами в стране гласных и согласных.' )
+			
+			.instagram__posts
+				+intagramItems("#", "background: url(static/images/content/inst-01.jpg) no-repeat center/cover;", "Magical Christmas with my very special Brazilian 🇧🇷 friend and patient @marianamilanid. @mystellamaris team wish you all a wonderful Christmas")
+				+intagramItems("#", "background: url(static/images/content/inst-02.jpg) no-repeat center/cover;", "Today we had a very special guest, @dr_kirsanova. She's not only a colleague but a good friend of #MyStellaMaris team❤. Thanks for sharing your experience and knowledgе about #vbeamlaser with us!!! You're always welcome at our clinic")
+				+intagramItems("#", "background: url(static/images/content/inst-03.jpg) no-repeat center/cover;", "Our focus is to give the best to our patients, that 's it🤗#vbeamlaser is already with us 🙏👩🏻‍⚕️")

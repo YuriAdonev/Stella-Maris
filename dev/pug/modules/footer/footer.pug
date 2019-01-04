@@ -1,0 +1,36 @@
+footer.footer
+	.subscribe
+		.subscribe__text Подписка<br>на рассылку
+			+icon('paper-plane','')
+		.subscribe__edit
+			form.subscribe__form
+				input.subscribe__input(type="text" name="email" placeholder="E-mail" value="" maxlength="255")
+				button.subscribe__btn(type="submit")
+					+icon('arrow_footer','')
+	.footer__top
+		.footer__contacts
+			a.footer__phone(href="tel:+78129464366") +7 (812) 946-43-66			
+			a.footer__email(href="mailto:info@mystellamaris.ru") info@mystellamaris.ru
+			.footer__address г. Санкт-Петербург, Московский&nbsp;пр.&nbsp;22, Пр.&nbsp;Римского-Корсакова,&nbsp;87
+			
+		.footer__nav
+			.footer__nav-col
+				a.footer__nav-link(href="#") Услуги
+				a.footer__nav-link(href="#") Продукция
+				a.footer__nav-link(href="#") Врачи
+			.footer__nav-col
+				a.footer__nav-link(href="#") О клинике
+				a.footer__nav-link(href="#") Блог
+				a.footer__nav-link(href="#") Контакты		
+			
+		.footer__social
+			.footer__social-text Мы в соцсетях
+			.footer__social-wrapper
+				a.footer__social-link(href="#")
+					+icon('instagram','')
+				a.footer__social-link(href="#")
+					+icon('vk','')
+				a.footer__social-link(href="#")
+					+icon('facebook','')
+
+	.footer__warning Имеются противопоказания. Необходима консультация специалистов.

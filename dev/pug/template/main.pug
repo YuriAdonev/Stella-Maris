@@ -1,0 +1,30 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="keywords" content="")
+		
+		link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
+		
+	body(class=pageClass)
+	
+		include ../modules/small-block/cookies
+		include ../modules/nav/main-menu
+		include ../modules/nav/nav
+		include ../modules/header/header-home
+
+		main.main
+			block content
+
+		include ../modules/footer/footer
+			
+		script(src="static/js/jquery-3.3.1.min.js")
+		script(src="static/js/libs.min.js")
+		script(src="static/js/slick.min.js")
+		script(src="static/js/main.js")
+		block script

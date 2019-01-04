@@ -1,0 +1,54 @@
+.instagram {
+	&__posts {
+		margin-top: 100px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		width: 340px;		
+		&:nth-child(2) {
+			.instagram__image {
+//				padding-top: 70px;
+				margin-top: 70px;
+			}
+		}
+		&:nth-child(3) {
+			.instagram__image {
+//				padding-top: 140px;
+				margin-top: 140px;
+			}
+		}
+	}
+	&__image {
+		position: relative;
+		width: 100%;
+		
+	}
+	&__img {
+		display: block;
+		width: 100%;
+		height: 340px;
+		background-size: cover;
+		position: relative;
+		z-index: 1;
+		box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05);
+		transition: 0.35s linear;
+		&:hover {
+			box-shadow: 0 5px 20px 0 rgba(0,0,0,0.3);
+		}
+	}
+	&__decor {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: -40px;
+		left: 40px;
+		border: 1px solid #000;
+	}
+	&__text {
+		margin-top: 15px;
+	}
+	&__author {
+		
+	}
+}

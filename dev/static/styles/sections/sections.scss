@@ -1,0 +1,96 @@
+@import 'feedback';
+@import 'services';
+@import 'specialists';
+@import 'price';
+@import 'products';
+@import 'atmosphere';
+@import 'about';
+@import 'advantages';
+@import 'instagram';
+
+.section {
+	&__wrapper {
+		position: relative;
+		padding-top: 100px;
+	}
+	&__title {
+		font-family: "PragmaticaSlab-ExtraLight", sans-serif;
+		font-size: 25px;
+		line-height: 30px;
+		text-transform: uppercase;
+		margin: 0 0 10px;
+    position: relative;
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 60px;
+      height: 2px;
+      background: #333333;
+      left: -80px;
+      top: 50%;
+    }
+	}
+	&__subtitle {
+		font-family: "PragmaticaSlab-ExtraLight", sans-serif;
+		font-size: 20px;
+		width: 400px;
+	}
+	&__bg-title {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    color: transparent;
+    overflow: hidden;
+    z-index: 100;
+    pointer-events: none;
+		font-family: "MrsSaintDelafield-Regular", sans-serif;
+    font-size: 150px;
+    line-height: 190px;
+		&.second {
+			left: auto;
+			right: 0;
+			top: 220px;
+		}
+		&.bottom {
+			top: auto;
+			bottom: -180px;
+		}
+		span {
+			position: absolute;
+			height: 50%;
+			width: 100%;
+			left: 0;
+			top: 0;
+			color: #c7c7c7;
+			opacity: 1;
+			overflow: hidden;
+			&:nth-child(2) {
+				top: 50%;
+			}
+			&:before {
+				content: attr(data-letters);
+				box-sizing: border-box;
+				position: absolute;
+				left: 0;
+				width: 100%;
+				color: #999999;
+				transition: transform 2.2s;
+			}
+			&:first-child:before {
+				top: 0;
+				transform: translate3d(0, 100%, 0);
+			}
+			&:nth-child(2):before {
+				bottom: 0;
+				transform: translate3d(0, -100%, 0);
+			}
+		}
+	}
+}
+
+.show .section__bg-title span:before {
+	transition-delay: 0s;
+	transform: translate3d(0, 0, 0);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}

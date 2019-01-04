@@ -1,0 +1,127 @@
+.about__cols {
+	margin-top: 60px;
+	display: flex;
+}
+.about__left {
+	width: 40%;
+	padding-left: 160px;
+	background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' preserveAspectRatio='xMidYMid' width='110.031' height='78' viewBox='0 0 110.031 78'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 { fill: %23c7c7c7; fill-rule: evenodd; } %3C/style%3E%3C/defs%3E%3Cpath d='M109.939,51.943 C110.176,55.633 110.099,60.244 107.395,65.703 C105.564,69.401 102.948,72.658 98.786,74.962 C96.045,76.479 93.206,77.539 90.112,77.868 C89.962,77.885 89.811,77.899 89.659,77.912 C89.028,77.966 88.393,78.003 87.746,78.004 C87.735,78.004 87.724,78.005 87.713,78.005 C87.711,78.005 87.707,78.005 87.704,78.005 C87.701,78.005 87.700,78.005 87.697,78.005 C87.693,78.005 87.689,78.005 87.685,78.005 C82.217,78.001 77.514,77.080 73.579,75.239 C69.636,73.396 66.414,71.016 63.915,68.104 C61.413,65.191 59.588,61.988 58.433,58.493 C57.279,54.998 56.703,51.601 56.703,48.300 C56.703,41.215 57.760,35.050 59.876,29.807 C61.990,24.565 64.853,19.956 68.458,15.974 C72.064,11.994 87.686,0.006 109.465,0.006 L109.465,6.609 C103.538,8.879 99.364,12.474 96.947,17.391 C94.527,22.309 93.318,25.046 93.318,31.236 L93.318,32.159 C104.605,35.593 109.242,41.114 109.939,51.943 ZM42.077,74.962 C39.336,76.479 36.498,77.539 33.403,77.868 C33.253,77.885 33.102,77.899 32.951,77.912 C32.320,77.966 31.685,78.003 31.037,78.004 C31.027,78.004 31.015,78.005 31.005,78.005 C31.002,78.005 30.998,78.005 30.995,78.005 C30.992,78.005 30.991,78.005 30.988,78.005 C30.984,78.005 30.980,78.005 30.976,78.005 C25.508,78.001 20.805,77.080 16.870,75.239 C12.927,73.396 9.705,71.016 7.206,68.104 C4.705,65.191 2.879,61.988 1.725,58.493 C0.570,54.998 -0.006,51.601 -0.006,48.300 C-0.006,41.215 1.051,35.050 3.168,29.807 C5.281,24.565 8.144,19.956 11.749,15.974 C15.355,11.994 30.977,0.006 52.756,0.006 L52.756,6.609 C46.829,8.879 42.655,12.474 40.238,17.391 C37.818,22.309 36.609,25.046 36.609,31.236 L36.609,32.159 C47.896,35.593 52.533,41.114 53.230,51.943 C53.468,55.633 53.390,60.244 50.686,65.703 C48.855,69.401 46.239,72.658 42.077,74.962 Z' class='cls-1'/%3E%3C/svg%3E") no-repeat left top;
+//	background: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='iso-8859-1'?%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' width='512px' height='512px' viewBox='0 0 511.626 511.626' style='enable-background:new 0 0 511.626 511.626;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M477.371,127.44c-22.843-28.074-53.871-50.249-93.076-66.523c-39.204-16.272-82.035-24.41-128.478-24.41 c-34.643,0-67.762,4.805-99.357,14.417c-31.595,9.611-58.812,22.602-81.653,38.97c-22.845,16.37-41.018,35.832-54.534,58.385 C6.757,170.833,0,194.484,0,219.228c0,28.549,8.61,55.3,25.837,80.234c17.227,24.931,40.778,45.871,70.664,62.811 c-2.096,7.611-4.57,14.846-7.426,21.693c-2.855,6.852-5.424,12.474-7.708,16.851c-2.286,4.377-5.376,9.233-9.281,14.562 c-3.899,5.328-6.849,9.089-8.848,11.275c-1.997,2.19-5.28,5.812-9.851,10.849c-4.565,5.048-7.517,8.329-8.848,9.855 c-0.193,0.089-0.953,0.952-2.285,2.567c-1.331,1.615-1.999,2.423-1.999,2.423l-1.713,2.566c-0.953,1.431-1.381,2.334-1.287,2.707 c0.096,0.373-0.094,1.331-0.57,2.851c-0.477,1.526-0.428,2.669,0.142,3.433v0.284c0.765,3.429,2.43,6.187,4.998,8.277 c2.568,2.092,5.474,2.95,8.708,2.563c12.375-1.522,23.223-3.606,32.548-6.276c49.87-12.758,93.649-35.782,131.334-69.097 c14.272,1.522,28.072,2.286,41.396,2.286c46.442,0,89.271-8.138,128.479-24.417c39.208-16.272,70.233-38.448,93.072-66.517 c22.843-28.062,34.263-58.663,34.263-91.781C511.626,186.108,500.207,155.509,477.371,127.44z' fill='%23FFFFFF'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E") no-repeat left top;
+//	background: url("../img/quotes.svg") no-repeat left top;
+	img {
+		width: 220px;
+		height: auto;
+		display: block;
+        margin: 0 auto 20px;
+	}
+}
+.about__left-image {
+	text-align: center;
+	//width: 240px;
+}
+.about__name {
+	font-size: 28px;
+	line-height: 38px;
+	margin: 0 0 10px;
+    font-family: PragmaticaSlab-ExtraLight, sans-serif;
+}
+.about__position {
+	font-size: 18px;
+	line-height: 22px;
+	margin: 0;
+	padding-bottom: 30px;
+	position: relative;
+	&:after {
+		position: absolute;
+		content: '';
+		display: block;
+		width: 30px;
+		height: 2px;
+		background: #000000;
+		bottom: 15px;
+		left: calc(50% - 15px);
+	}
+}
+
+.about__right {
+	margin-left: 50px;
+	width: 57%;
+    padding-top: 120px;
+}
+.about__text {
+    font-size: 18px;
+    color: #333333;
+}
+
+.team {
+	margin-top: 60px;
+}
+.team__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.team__item {
+	width: 17%;
+	position: relative;
+    text-align: center;
+	.team-item__image {
+		position: relative;
+		top: 10px;
+		width: 100%;
+		transition: all 0.35s;
+		img {
+			width: 100%;
+			height: auto;
+		}
+		&:after {
+			display: block;
+			content: '';
+			position: absolute;
+			width: 2px;
+			height: 0;
+			background: #000000;
+			top: -15px;
+			left: 50%;
+			transition: all 0.35s;
+		}
+	}
+	.team-item__desc {
+		position: relative;
+		top: 10px;
+		//opacity: 0;
+		//transition: all 0.5s;
+	}
+	&:nth-child(5n+2) {
+		margin-top: 3.75vw;
+	}
+	&:nth-child(5n+4) {
+		margin-top: 1.875vw;
+	}
+	&:hover {
+		.team-item__image {
+			top: 0;
+			&:after {
+				height: 40px;
+			}
+		}
+		//.team-item__desc {
+		//	position: relative;
+		//	top: 0;
+		//	opacity: 1;
+		//	transition: all 0.5s;
+		//}
+	}
+
+	.team-item__name {
+		font-size: 20px;
+		line-height: 24px;
+		margin: 0;
+        font-family: PragmaticaSlab-ExtraLight, sans-serif;
+	}
+	.team-item__position {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0;
+	}
+}

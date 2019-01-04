@@ -1,0 +1,87 @@
+.feedback {
+	margin-top: 100px;
+	&__wrapper {
+//		margin: 120px 0 30px;
+		border: 1px solid #000000;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	&__header {
+		text-align: center;
+	}
+	&__title {
+		font-family: PragmaticaSlab-ExtraLight, sans-serif;
+		font-size: 24px;
+		margin-bottom: 5px;
+	}
+	&__subtitle {
+		font-family: PragmaticaSlab-ExtraLight, sans-serif;
+		width: 610px;
+		margin: 0 auto 10px;
+		a {
+			color: #000;
+		}
+	}
+	.form {
+		&__form {
+			position: relative;
+			transition: opacity .35s;
+			text-align: center;
+			display: flex;
+			justify-content: space-around;
+		}
+		&__fields {
+			margin-bottom: 25px;
+			width: 200px;
+		}
+		&__input {
+			position: relative;
+			display: block;
+			box-sizing: border-box;
+			font-size: 13px;
+			width: 100%;
+			padding: 16px 0 11px;
+			background-color: transparent;
+			border: none;
+			border-radius: 0;
+			color: #000000;
+			border-bottom: 1px solid #d9d9d9;
+			transition: all .35s;
+			&:focus, &:active {
+				border-bottom: 1px solid #000000;
+			}
+		}
+		&__input-wrapper {
+			position: relative;
+			width: 100%;
+			margin-bottom: 25px;
+			padding-top: 3px;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+		&__submit {
+			letter-spacing: .1em;
+			align-self: flex-start;
+			//padding: 15px 20px 13px;
+			color: #ffffff;
+			background-color: #000000;
+			border: none;
+			cursor: pointer;
+			transition: transform .35s;
+			white-space: nowrap;
+			margin-bottom: 0;
+			font-family: PragmaticaSlab-ExtraLight, sans-serif;
+			position: relative;
+			box-sizing: border-box;
+			display: block;
+			width: 180px;
+			height: 40px;
+			font-size: 12px;
+			font-weight: 700;
+			text-transform: uppercase;
+			line-height: 38px;
+			text-align: center;
+		}
+	}	
+}

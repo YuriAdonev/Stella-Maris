@@ -1,0 +1,9 @@
+@import 'cookies';
+@import 'scroll';
+
+.js-accordion-item-content {
+	display: none;
+	&.active {
+		display: block;
+	}
+}

@@ -1,0 +1,152 @@
+.subscribe {
+  background: #ecf0f1;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    margin-right: 30px;
+    position: relative;
+    line-height: 20px;
+    padding-left: 46px;
+    svg {
+      display: block;
+      height: 32px;
+      width: 32px;
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }
+  }
+  &__form {
+    position: relative;
+    width: 600px;
+  }
+  &__input {
+    background: #FFF;
+    color: #999999;
+    height: 44px;
+    border: none;
+    padding: 6px 50px 6px 20px;
+    overflow: hidden;
+    width: 100%;
+  }
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    width: 50px;
+    height: 44px;
+    opacity: 0.5;
+    border: none;
+    cursor: pointer;
+		background: transparent;
+    transition: all 0.3s ease;
+		svg {
+			display: block;
+			height: 20px;
+			width: 20px;
+			margin: 0 auto;
+		}
+		&:hover {
+			opacity: 1;
+			background: transparent;
+		}
+  }
+}
+.footer {
+	background: #f1f4f5;
+	margin-top: 100px;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		padding: 40px 0;
+		width: 1170px;
+		margin: 0 auto;
+	}
+	&__contacts{
+		font-family: PragmaticaSlab-ExtraLight, sans-serif;
+	width: 25%;
+	padding-right: 15px;
+	}
+	&__phone{
+		margin-bottom: 10px;
+		color: #000000;
+		&:hover {
+			color: #000000;
+			text-decoration: none;
+		}
+	}
+	&__email{
+		display: block;
+		margin-bottom: 10px;
+		color: #000000;
+		&:hover {
+			color: #000000;
+			text-decoration: none;
+		}
+	}
+	&__address{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	&__nav{
+		width: 50%;
+		display: flex;
+	}
+	&__nav-col{
+		width: 50%;
+		padding: 5px 25px;
+	}
+	&__nav-link{
+		display: block;
+		color: #000000;
+		text-transform: uppercase;
+		font-family: PragmaticaSlab-ExtraLight, sans-serif;
+		font-size: 16px;
+		padding: 5px 10px;
+		transition: all 0.35s;
+		&:hover {
+			color: #000000;
+			text-decoration: none;
+			font-weight: 700;
+		}
+	}
+	&__social{
+		font-family: PragmaticaSlab-ExtraLight, sans-serif;
+		width: 20%;
+		padding-right: 15px;
+	}
+	&__social-text{
+		
+	}
+	&__social-wrapper{
+		display: flex;
+		margin-top: 5px;
+	}
+	&__social-link{
+		width: 25px;
+		display: block;
+		margin-right: 15px;
+		svg {
+			width: 25px;
+			height: 25px;
+			fill: #333;
+			transition: all 0.35s;
+		}
+		&:hover {
+			svg {
+				fill: #000;
+			}
+		}
+	}
+	&__warning {
+    text-align: center;
+    background: #fff;
+    color: #bbb;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+	}	
+}

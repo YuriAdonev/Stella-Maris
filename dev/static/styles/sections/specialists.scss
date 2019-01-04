@@ -1,0 +1,33 @@
+.specialists__items {
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+.specialists__slide {
+
+}
+.specialists__item {
+	text-align: center;
+	border: 1px solid #000000;
+	width: 360px;
+	margin: 0 auto;
+	font-family: PragmaticaSlab-ExtraLight, sans-serif;
+	padding: 30px;
+}
+.specialists-item__img {
+	height: 150px;
+	img {
+		height: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+}
+.specialists-item__name {
+	font-weight: 700;
+	font-size: 18px;
+	margin: 10px 0 0;
+}
+.specialists-item__text {
+	font-size: 14px;
+	line-height: 18px;
+	margin: 5px 0 0;
+}

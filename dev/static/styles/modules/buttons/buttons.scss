@@ -1,0 +1,123 @@
+.product__btn {
+  display: block;
+  font-family: "PragmaticaSlab-ExtraLight", sans-serif;
+  position: relative;
+  box-sizing: border-box;
+  width: 220px;
+  height: 50px;
+	font-size: 12px;
+	text-transform: uppercase;
+  line-height: 48px;
+  background: #000;
+  text-align: center;
+  border: 1px solid #000;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 30px auto 0;
+  //opacity: 0;
+  transition: all 0.7s ease 0.4s;
+}
+.product__btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  //transition: none;
+  transition: all 0.5s ease 0s;
+}
+.product__btn:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+.product__btn:hover:after {
+  width: 100%;
+  background: #fff;
+}
+.product__btn span {
+  position: relative;
+  z-index: 10;
+  padding-right: 40px;
+  transition: all 0.3s cubic-bezier(1, 0.02, 0.74, 0.93) 0s;
+}
+.product__btn:hover span {
+  color: #000;
+	font-weight: 800;
+}
+.product__btn span:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  bottom: 0;
+  right: 0px;
+  margin: auto 0;
+  width: 30px;
+  height: 12px;
+  opacity: 0;
+	background: url("data:image/svg+xml;charset=utf8,%3Csvg enable-background='new -245.2 391.5 29.8 11.5' viewBox='-245.2 391.5 29.8 11.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m-245.2 398.2h25.8l-3.1 3.2 1.4 1.4 5.6-5.7-5.6-5.6-1.4 1.4 3.1 3.1h-25.8'/%3E%3C/svg%3E") no-repeat center;
+//  background: url(../img/ar-btn-1.svg) no-repeat center;
+  transform: translateX(-10px);
+  transition: all 0.5s ease 0s;
+}
+.product__btn:hover span:before {
+  opacity: 1;
+  transform: translateX(0);
+}
+.product__btn span:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  bottom: 0;
+  right: 0px;
+  margin: auto 0;
+  width: 30px;
+  height: 12px;
+	background: url("data:image/svg+xml;charset=utf8,%3Csvg enable-background='new -245.2 391.5 29.8 11.5' viewBox='-245.2 391.5 29.8 11.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m-245.2 398.2h25.8l-3.1 3.2 1.4 1.4 5.6-5.7-5.6-5.6-1.4 1.4 3.1 3.1h-25.8' fill='%23fff'/%3E%3C/svg%3E") no-repeat center;
+//  background: url(../img/ar-btn.svg);
+  transition: all 0.5s ease 0s;
+}
+.product__btn:hover span:after {
+  transform: translateX(10px);
+  opacity: 0;
+}
+.product__items .product__btn {
+	position: absolute;
+  bottom: 20px;
+	height: 40px;
+	width: 180px;
+	line-height: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+	text-align: center;
+	span {
+		padding-right: 0;
+	}
+	span:before {
+		background: transparent;
+	}
+	span:after {
+		background: transparent;
+	}
+}
+.price__item .product__btn {
+	margin: 0 25px;
+	height: 32px;
+	width: 150px;
+	line-height: 32px;
+	text-align: center;
+	span {
+		padding-right: 0;
+	}
+	span:before {
+		background: transparent;
+	}
+	span:after {
+		background: transparent;
+	}
+
+}

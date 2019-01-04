@@ -1,0 +1,51 @@
+.cc-window {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 900;
+	&__wrapper {
+		display: flex;
+	}
+	&__text {
+		font-family: "PragmaticaSlab-ExtraLight", sans-serif;
+		padding: 10px 15px;
+		color: #fff;
+	}
+	&__close {
+		position: relative;
+	}
+	&__close_btn {
+		content: '';
+		display: block;
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+		&:before {
+			content: '';
+			display: block;
+			width: 20px;
+			height: 2px;
+			background: #fff;
+			transform: rotate(-45deg);
+			position: absolute;
+			top: 20px;
+			right: 10px;
+		}
+		&:after {
+			content: '';
+			display: block;
+			width: 20px;
+			height: 2px;
+			background: #fff;
+			transform: rotate(45deg);
+			position: absolute;
+			top: 20px;
+			right: 10px;
+		}
+	}
+	&.disable {
+		display: none;
+	}
+}

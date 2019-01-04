@@ -1,0 +1,17 @@
+mixin navItem(navLink, navName)
+	a(href=navLink class="nav__link")= navName
+
+nav.nav
+	.nav__wrap
+		+navItem("#", "О клинике")
+		+navItem("products.html", "Услуги")
+		+navItem("products.html", "Продукция")
+		+navItem("products.html", "Врачи")
+		+navItem("products.html", "Контакты")
+		+navItem("products.html", "+7 (812) 946 43 66")
+		.menu__btn Меню
+			span
+			span
+			span
+		.nav__logo
+			a(href='index.html') Stella Maris

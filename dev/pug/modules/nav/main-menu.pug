@@ -1,0 +1,72 @@
+.main-menu
+	.menu-close 
+		| Закрыть
+		.menu-close__btn
+			span
+			span
+	
+			
+	.main-menu__wrapper
+		.main-menu__logo
+			+icon('logo', 'logo__icon')
+		.main-menu__content
+			.main-menu__col
+				ul
+					li
+						a.main-menu__link.main-menu__title(href="product.html") Продукция
+					li
+						a.main-menu__link.main-menu__title(href="#") Врачи
+					li
+						a.main-menu__link.main-menu__title(href="#") Контакты
+					li
+						a.main-menu__link.main-menu__title(href="#") Оборудование
+			.main-menu__col
+				ul
+					li
+						a.main-menu__link.main-menu__title(href="product.html") Услуги
+					li
+						a.main-menu__link(href="#") Косметология
+					li
+						a.main-menu__link(href="#") Дерматология
+					li
+						a.main-menu__link(href="#") Трихология
+					li
+						a.main-menu__link(href="#") Эндокринология/<br>Диетология
+					li
+						a.main-menu__link(href="#") Остеопатия
+					li
+						a.main-menu__link(href="#") Массаж
+			.main-menu__col
+				ul
+					li
+						a.main-menu__link.main-menu__title(href="product.html") О клинике
+					li
+						a.main-menu__link(href="#") Лицензии и документы
+					li
+						a.main-menu__link(href="#") Юридическая информация
+					li
+						a.main-menu__link(href="#") Новости
+					li
+						a.main-menu__link(href="#") О нас в прессе
+					li
+						a.main-menu__link(href="#") Корпоративным клиентам
+					li
+						a.main-menu__link(href="#") Вакансии
+		.menu-bottom__row
+			.menu__contact
+				.contacts_col
+					p.contacts_text <a href="#">+7 (812) 123-45-67</a> <a href="mailto:info@glassen-it.com" class="contacts_mail">info@stellamaris.com</a>	-&nbsp;консультация
+				.contacts_col
+					p.contacts_text <a href="#">+7 (812) 123-45-67</a> <a href="mailto:info@glassen-it.com" class="contacts_mail">info@stellamaris.com</a>	-&nbsp;по вопросам сотрудничества</p>
+			form#callback_footer.menu-form
+				.menu-form__row
+					.menu-form__item
+						input.menu-form__input(type="text" name="name" placeholder="Имя" required)
+						input.menu-form__input(type="text" id="phone" name="phone" placeholder="Телефон" required)
+						label.menu-form__label
+							input(type="checkbox" onchange="document.getElementById('footerSendButton').disabled = !this.checked;" checked)
+							span
+								a(href="#") Подтверждаю согласие на обработку персональных данных
+					.menu-form__item
+						button.form_btn(type="submit") Заказать обратный звонок
+							span.arrow
