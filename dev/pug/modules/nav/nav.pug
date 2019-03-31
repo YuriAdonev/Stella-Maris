@@ -3,15 +3,17 @@ mixin navItem(navLink, navName)
 
 nav.nav
 	.nav__wrap
-		+navItem("#", "О клинике")
-		+navItem("products.html", "Услуги")
-		+navItem("products.html", "Продукция")
-		+navItem("products.html", "Врачи")
-		+navItem("products.html", "Контакты")
-		+navItem("products.html", "+7 (812) 946 43 66")
+		.nav__menu
+			+navItem("about.html", "О клинике")
+			+navItem("services.html", "Услуги")
+			+navItem("price.html", "Цены")
+			+navItem("products.html", "Продукция")
+			+navItem("doctors.html", "Врачи")
+			+navItem("contacts.html", "Контакты")
+			+navItem("#", "+7 (812) 946 43 66")
 		.menu__btn Меню
 			span
 			span
 			span
 		.nav__logo
-			a(href='index.html') Stella Maris
+			a(href='index.html') My Stella Maris

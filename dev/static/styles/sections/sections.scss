@@ -4,9 +4,10 @@
 @import 'price';
 @import 'products';
 @import 'atmosphere';
-@import 'about';
+@import 'doctors';
 @import 'advantages';
 @import 'instagram';
+@import 'contacts';
 
 .section {
 	&__wrapper {
@@ -15,25 +16,26 @@
 	}
 	&__title {
 		font-family: "PragmaticaSlab-ExtraLight", sans-serif;
-		font-size: 25px;
+		font-size: 20px;
 		line-height: 30px;
 		text-transform: uppercase;
 		margin: 0 0 10px;
+		padding-bottom: 5px;
     position: relative;
     &:after {
       position: absolute;
       display: block;
       content: '';
-      width: 60px;
-      height: 2px;
+      width: 40px;
+      height: 1px;
       background: #333333;
-      left: -80px;
-      top: 50%;
+      left: 0;
+      bottom: 0;
     }
 	}
 	&__subtitle {
 		font-family: "PragmaticaSlab-ExtraLight", sans-serif;
-		font-size: 20px;
+		font-size: 16px;
 		width: 400px;
 	}
 	&__bg-title {
@@ -45,7 +47,7 @@
     z-index: 100;
     pointer-events: none;
 		font-family: "MrsSaintDelafield-Regular", sans-serif;
-    font-size: 150px;
+    font-size: 120px;
     line-height: 190px;
 		&.second {
 			left: auto;

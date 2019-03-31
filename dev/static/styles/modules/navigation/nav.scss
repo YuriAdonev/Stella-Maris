@@ -3,7 +3,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 6;
+	z-index: 11;
 	height: 66px;
 	font-family: "PragmaticaSlab-ExtraLight", sans-serif;
 	&__wrap {
@@ -12,40 +12,50 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-    margin-left: calc(27px + 3.3vw);
-    margin-right: calc(27px + 3.3vw);
+    margin-left: 56px;
+    margin-right: 56px;
 		display: flex;
-		justify-content: flex-end;
+		justify-content: space-between;
 		align-items: center;
-		border-bottom: 1px solid rgba(216,216,216,.2);
+		border-bottom: 1px solid #d0cece;
 	}
 	&__logo {
-		position: absolute;
-		top: 0;
-		left: 0;
+//		position: absolute;
+//		top: 0;
+//		left: 0;
 		font-family: "MrsSaintDelafield-Regular", sans-serif;
 		line-height: 76px;
 		font-size: 32px;
+		order: -1;
 		a { 
 			color: #000;
 		}
 	}
+	&__menu {
+		display: flex;
+	}
 	&__link {
 		text-transform: uppercase;
+		display: block;
     position: relative;
     line-height: 166%;
     font-size: 12px;
     color: #000;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 		margin-left: 60px;
 		margin-top: 2px;
 		transition: all 0.25s linear;
 		&:hover {
 			font-weight: 700;
 		}
+		&:first-child {
+			margin-left: 0;
+		}
 	}
 }
 .home-page .nav {
+	position: fixed;
+	z-index: 6;
 	a {
 		color: #fff;
 	}
@@ -58,30 +68,30 @@
   height: 40px;
 	line-height: 30px;
   padding: 5px;
-  margin-left: calc(60px + 1.41vw);
 	text-transform: uppercase;
 	position: relative;
 	font-size: 12px;
 	color: #ffffff;
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
 	transition: color .4s linear .4s;
   span {
     display: block;
     position: absolute;
     width: 30px;
-    height: 1px;
+    height: 2px;
+		border-radius: 2px;
     background: #ffffff;
     transition: all 0.25s;
   }
   span:nth-child(1) {
     top: 7px;
 	  right: 0;
-	  width: 45px;
+	  width: 30px;
   }
   span:nth-child(2) {
     top: 19px;
-	  width: 15px;
-	  right: 0;
+	  width: 30px;
+	  right: 6px;
   }
   span:nth-child(3) {
     top: 31px;

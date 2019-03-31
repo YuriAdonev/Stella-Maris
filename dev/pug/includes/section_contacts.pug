@@ -1,0 +1,34 @@
+section.contacts
+	.container
+		.section__wrapper.anim-title-bg
+			+sectionTitle('Contacts', 'Контакты', 'Далеко-далеко за словесными горами в стране гласных и согласных.' )
+			.contacts__wrapper
+				.contacts-info
+					.contacts-info__item
+						.contacts-info__address Санкт-Петербург<br>Ленина пр. д.45, оф. 20
+						.contacts-info__desc по предварительной записи
+					.contacts-info__item
+						.contacts-info__row
+							a.contacts-info__link(href="#") 8 (812) 123-45-67
+							.contacts-info__desc - запись на прием
+						a.contacts-info__link(href="#") welcome@stella-maris.ru
+					.contacts-info__item
+						.contacts-info__row
+							a.contacts-info__link(href="#") 8 (812) 234-56-78
+							.contacts-info__desc - сотрудничество
+						a.contacts-info__link(href="#") partners@stella-maris.ru
+					.contacts-info__item
+						.contacts-info__desc пресса и реклама
+						a.contacts-info__link(href="#") press@stella-maris.ru
+					.contacts-info__item
+						.contacts-info__desc Режим работы:
+						.contacts-info__desc пн-пт с 10:00 до 19:00
+				.contacts-form
+					form
+						p.contacts-form__title Свяжитесь с нами
+						input(type="text" placeholder="Имя")
+						input(type="text" placeholder="Email")
+						input(type="text" placeholder="Телефон")
+						textarea(placeholder="Сообщение")
+						button.btn.product__btn
+							span Отправить

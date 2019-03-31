@@ -1,0 +1,64 @@
+.doctors {
+	&__wrapper {
+		margin-top: 100px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		width: 360px;
+		padding-top: 60px;
+		padding-left: 40px;
+		&:hover {
+			.doctors-item__desc::before {
+				border: 1px solid #d0cece;
+			}
+		}
+	}
+}
+
+.doctors-item {
+	&__desc {
+		width: 340px;
+		position: relative;
+		color: #ffffff;
+    background: rgba(0, 0, 0, 0.8);
+		padding: 300px 40px 40px 20px;
+		&::before {
+			content: "";
+			display: block;
+			width: 340px;
+			height: 100%;
+			position: absolute;
+			left: -20px;
+			top: -20px;
+			border: 1px solid #000;
+			transition: all 0.25s linear;
+		}
+	}
+	&__image {
+		width: 300px;
+		height: 340px;
+		overflow: hidden;
+		position: absolute;
+		top: -60px;
+		left: -40px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__name {
+		font-size: 16px;
+		margin-bottom: 5px;
+		font-weight: 800;
+//		text-transform: uppercase;
+	}
+	&__list {
+		padding-left: 14px;
+	}
+	&__text {
+		font-size: 16px;
+	}
+}
+		

@@ -2,11 +2,12 @@
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/fonts";
-
+@import "utils/swiper";
 
 html {
   font-size: $base-font-size;
-	font-family: 'LatoRegular', sans-serif;
+//	font-family: 'LatoRegular', sans-serif;
+	font-family: "PragmaticaSlab-ExtraLight", Arial, sans-serif;
 	line-height: 1.65;
 	-webkit-font-smoothing: antialiased;
   height: 100%;
@@ -15,8 +16,13 @@ html {
 body {
 	height: 100%;
 	position: relative;
+	z-index: 1;
+	letter-spacing: 0.5px;
 	&.no-scroll {
 		position: fixed;
+	}
+	&.home-page {
+		padding-top: 100vh;
 	}
 }
 
@@ -62,6 +68,14 @@ button { outline: none; }
   margin: 0 auto;
   max-width: $content-size;
   width: 100%;
+}
+
+.main {
+	position: relative;
+	z-index: 10;
+	&__wrapper {
+		background: #ffffff url(../images/general/pattern-dot-black.png) -16px -20px;
+	}
 }
 
 @import "utils/slick";

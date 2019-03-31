@@ -7,8 +7,10 @@
   &__text {
     margin-right: 30px;
     position: relative;
-    line-height: 20px;
+    line-height: 44px;
     padding-left: 46px;
+		font-size: 12px;
+		text-transform: uppercase;
     svg {
       display: block;
       height: 32px;
@@ -57,7 +59,8 @@
 }
 .footer {
 	background: #f1f4f5;
-	margin-top: 100px;
+	position: relative;
+	z-index: 10;
 	&__top {
 		display: flex;
 		justify-content: space-between;
@@ -67,8 +70,9 @@
 	}
 	&__contacts{
 		font-family: PragmaticaSlab-ExtraLight, sans-serif;
-	width: 25%;
-	padding-right: 15px;
+		font-size: 12px;
+		width: 25%;
+		padding-right: 15px;
 	}
 	&__phone{
 		margin-bottom: 10px;
@@ -88,7 +92,7 @@
 		}
 	}
 	&__address{
-		font-size: 16px;
+		font-size: 12px;
 		line-height: 20px;
 	}
 	&__nav{
@@ -104,7 +108,7 @@
 		color: #000000;
 		text-transform: uppercase;
 		font-family: PragmaticaSlab-ExtraLight, sans-serif;
-		font-size: 16px;
+		font-size: 12px;
 		padding: 5px 10px;
 		transition: all 0.35s;
 		&:hover {
@@ -119,7 +123,7 @@
 		padding-right: 15px;
 	}
 	&__social-text{
-		
+		font-size: 12px;
 	}
 	&__social-wrapper{
 		display: flex;
@@ -147,6 +151,9 @@
     color: #bbb;
     padding: 5px 10px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
 	}	
+}
+.inner-page .footer {
+	margin-top: 100px;
 }

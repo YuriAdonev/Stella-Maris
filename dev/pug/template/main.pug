@@ -19,12 +19,14 @@ html(lang="ru-RU")
 		include ../modules/header/header-home
 
 		main.main
-			block content
+			.main__wrapper
+				block content
 
 		include ../modules/footer/footer
 			
 		script(src="static/js/jquery-3.3.1.min.js")
 		script(src="static/js/libs.min.js")
 		script(src="static/js/slick.min.js")
+		script(src="static/js/swiper.min.js")
 		script(src="static/js/main.js")
 		block script

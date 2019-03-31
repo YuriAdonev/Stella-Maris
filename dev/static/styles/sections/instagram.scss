@@ -1,6 +1,7 @@
 .instagram {
 	&__posts {
 		margin-top: 100px;
+		padding-bottom: 100px;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -8,14 +9,17 @@
 		width: 340px;		
 		&:nth-child(2) {
 			.instagram__image {
-//				padding-top: 70px;
 				margin-top: 70px;
 			}
 		}
 		&:nth-child(3) {
 			.instagram__image {
-//				padding-top: 140px;
 				margin-top: 140px;
+			}
+		}
+		&:hover {
+			.instagram__decor {
+				border-color: #000;
 			}
 		}
 	}
@@ -31,11 +35,8 @@
 		background-size: cover;
 		position: relative;
 		z-index: 1;
-		box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05);
+//		box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05);
 		transition: 0.35s linear;
-		&:hover {
-			box-shadow: 0 5px 20px 0 rgba(0,0,0,0.3);
-		}
 	}
 	&__decor {
 		position: absolute;
@@ -43,7 +44,8 @@
 		height: 100%;
 		top: -40px;
 		left: 40px;
-		border: 1px solid #000;
+		border: 1px solid #d0cece;
+		transition: 0.25s linear;
 	}
 	&__text {
 		margin-top: 15px;
